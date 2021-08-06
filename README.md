@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)!
+# Doppler Vacantes
 
-## Getting Started
+_Doppler Vacantes hecho con NextJs_
 
-First, run the development server:
+## Comenzando 🚀
+
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+
+### Pre-requisitos 📋
+
+_Que cosas necesitas para instalar la app y como instalarlas_
 
 ```bash
-npm run dev
-# or
+yarn install
+```
+
+_\*Si no tienes YARN_
+
+```bash
+npm install --global yarn
+```
+
+### Ejecutando versión Develop 🔧
+
+_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+
+```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+_Y corre en el navegador [http://localhost:3000](http://localhost:3000) o [http://0.0.0.0:3000](http://0.0.0.0:3000)_
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Revisión del codigo (Prettier y ESLint) ⚙️
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+_Si el IDE (en mi caso uso Visual Studio Code) no esta configurado Prettier y ESLint se puede correr:_
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+yarn prettier
+```
 
-## Learn More
+_y luego_
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+yarn prettier-check
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+_Buscamos errores antes de generar el commit_
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+yarn lint
+```
 
-## Deploy on Vercel
+🟡 _Estos pasos los podemos obviar con husky, al hacer el commit._
+_Husky hace la revisión del código en orden: primero Prettier y luego ESLint de esta manera si se tenemos errores nos avisa para fixearlos._
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Despliegue 📦
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+_Esperando credenciales de AWS por generar los Deploys_
 
-testing2
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+- [NextJs](https://nextjs.org/) - El framework web usado
+- [Sass](https://sass-lang.com/) - Preprocesador CSS
+- [Css](https://styled-components.com/) - Librería CSS para componentes en Javascript
+- [Webpack](https://rometools.github.io/rome/) - Manejador de dependencias
+- [Eslint](https://eslint.org/) - Herramienta para "limpiar" código javascript
+- [Prettier](https://prettier.io/) - Formateador automáticamente de código
+
+---
