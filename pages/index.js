@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Making Sense{" "}
           <a href="https://makingsense.hiringroom.com/jobs">
-            Oportunidades de empleo!
+            Oportunidades de empleo HP v2!
           </a>
         </h1>
 
